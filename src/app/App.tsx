@@ -4,6 +4,7 @@ import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 import { Suspense } from 'react';
+import { PageLoader } from 'widgets/PageLoader/PageLoader';
 
 import './styles/index.scss';
 
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div className={classNames('app', {}, [theme])}>
-      <Suspense fallback="Loading...">
+      <Suspense fallback={<PageLoader />}>
         <Navbar />
         <div className="content-page">
           <Sidebar />
