@@ -1,10 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import { PageLoader } from 'widgets/PageLoader/PageLoader';
+import { BugButton } from 'app/providers/ErrorBoundary';
 
 const MainPage = () => {
   const { t } = useTranslation();
   return (
     <div>
+      <BugButton />
       {t('Главная страница')}
     </div>
   );
