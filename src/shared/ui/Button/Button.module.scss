@@ -12,6 +12,14 @@
   outline: none;
 }
 
+.clearInverted {
+  padding: 0;
+  color: var(--inverted-prymary-color);
+  border: none;
+  background: none;
+  outline: none;
+}
+
 .outline {
   border: 1px solid var(--prymary-color);
   color: var(--prymary-color);
